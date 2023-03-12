@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlueTreadAPI", "BlueTreadAPI\BlueTreadAPI.csproj", "{6DA5DD1D-8FB9-468E-A7F7-3E2ADAD9AC98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DA5DD1D-8FB9-468E-A7F7-3E2ADAD9AC98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA5DD1D-8FB9-468E-A7F7-3E2ADAD9AC98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA5DD1D-8FB9-468E-A7F7-3E2ADAD9AC98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA5DD1D-8FB9-468E-A7F7-3E2ADAD9AC98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0445873C-EE3F-43C3-AD85-D8409ED3049E}
+	EndGlobalSection
+EndGlobal
