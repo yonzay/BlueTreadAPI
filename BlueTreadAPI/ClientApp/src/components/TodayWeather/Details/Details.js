@@ -12,9 +12,24 @@ const Details = ({ data }) => {
   const noDataProvided =
     !data || Object.keys(data).length === 0 || data.cod === '404';
 
-  let content = <ErrorBox flex="1" type="error" />;
+    let content = <ErrorBox flex="1" type="error" />;
 
-  const dayMonth = getDayMonthFromDate(data.time);
+    const forecastMonths = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'June',
+        'July',
+        'Aug',
+        'Sept',
+        'Oct',
+        'Nov',
+        'Dec'
+    ]
+
+    const dayMonth = forecastMonths[new Date(data.time).getMonth()] + ' ' + getDayMonthFromDate(data.time);
 
   if (!noDataProvided)
     content = (
@@ -36,7 +51,7 @@ const Details = ({ data }) => {
           }}
         >
           <TemperatureWeatherDetail
-            temperature={data.temp_f}
+            temperature={data.temp_c}
             description={data.summary}
           />
         </Grid>

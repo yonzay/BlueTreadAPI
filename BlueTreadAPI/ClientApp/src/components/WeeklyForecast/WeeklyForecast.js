@@ -7,15 +7,30 @@ import Layout from '../Reusable/Layout';
 
 const WeeklyForecast = ({ data }) => {
 
-  const forecastDays = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday'
-  ]
+    const forecastDays = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+    ]
+
+    const forecastMonths = [
+        'Jan',
+        'Feb',
+        'Mar',
+        'Apr',
+        'May',
+        'June',
+        'July',
+        'Aug',
+        'Sept',
+        'Oct',
+        'Nov',
+        'Dec'
+    ]
 
   let content = (
       <Grid
@@ -26,7 +41,7 @@ const WeeklyForecast = ({ data }) => {
         xs={12}
         gap="4px"
       >
-        {data.map((item, idx) => {
+          {data.map((item, idx) => {
           return (
             <Grid
               item
@@ -43,8 +58,8 @@ const WeeklyForecast = ({ data }) => {
                 borderRadius: '8px',
               }}
             >
-              <DayWeatherDetails
-                day={forecastDays[idx % 7]}
+                  <DayWeatherDetails
+                      day={`${forecastDays[new Date(item.date).getDay()]} ${forecastMonths[new Date(item.date).getMonth()]} ${new Date(item.date).getDate()}`}
                 src={item.icon}
                 description={item.summary}
               />
