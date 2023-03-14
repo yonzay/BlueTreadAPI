@@ -10,8 +10,8 @@ function formatAMPM(date) {
 }
 
 export function getDayMonthFromDate(timee) {
-  const newTimee = new Date(timee);
-  const day = newTimee.getUTCDate();
+    const newTimee = new Date(timee);
+    const day = newTimee.getDate();
 
   return day + ' ' + formatAMPM(newTimee);
 }
